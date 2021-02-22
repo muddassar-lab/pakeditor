@@ -7,7 +7,6 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.fxml.FXMLLoader;
-
 import java.io.IOException;
 
 
@@ -23,6 +22,8 @@ public class App extends Application {
         stage.setTitle("PakEditor");
         stage.setScene(new Scene(root,800,600));
         stage.show();
+        MainController controller= loader.getController();
+        controller.setStage(stage);
 
     }
 
